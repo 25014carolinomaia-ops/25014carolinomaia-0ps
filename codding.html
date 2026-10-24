@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SISTEMA INFORMAÇÃO ACADÉMICA - UNTL</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">FECT</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#">Perfil</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Historia</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Estrutura</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">Funcionario</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Docente</a></li>
+              <li><a class="dropdown-item" href="#">Administrativo</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Municipio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Alumni</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">Outras Sistemas</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">E-Learning</a></li>
+              <li><a class="dropdown-item" href="#">Exame Online</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">Departamentos</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Mecanica</a></li>
+              <li><a class="dropdown-item" href="#">Civil</a></li>
+              <li><a class="dropdown-item" href="#">Electronica</a></li>
+              <li><a class="dropdown-item" href="#">Informatica</a></li>
+              <li><a class="dropdown-item" href="#">Geologia</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="dropdown">
+          <button class="btn btn-dark dropdown-toggle" type="button"
+            id="onlineDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+            Online
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="onlineDropdown">
+            <li><a class="dropdown-item" href="#">Docente</a></li>
+            <li><a class="dropdown-item" href="#">Estudante</a></li>
+            <li><a class="dropdown-item" href="#">Secretario</a></li>
+            <li><a class="dropdown-item" href="#">Class Evaluasaun</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid bg-white logo-section d-flex align-items-center">
+    <img src="foto/logo.jpg" alt="UNTL Logo" class="logo-image">
+    <div class="head-info ms-3">
+      <h1 class="untl-title">UNTL</h1>
+      <h5 class="faculty-title">Faculdade de Engenharia,<br>Ciência e Tecnologia</h5>
+      <div class="siak-title">SISTEMA INFORMAÇÃO <span class="text-black fw-bold">ACADÉMICA</span></div>
+    </div>
+  </div>
+
+  <div class="container my-3">
+    <div class="alert alert-primary text-center py-2 mb-3">
+      Estudantes Ativos na Faculdade de Engenharia, Ciência e Tecnologia
+    </div>
+    <div class="table-responsive">
+      <table class="table table-bordered table-sm align-middle text-center">
+        <thead class="table-primary">
+          <tr>
+            <th>Ano</th>
+            <th>Mecânica</th>
+            <th>Civil</th>
+            <th>Eletrônica e Elétrica</th>
+            <th>Informática</th>
+            <th>Geologia e Petróleo</th>
+          </tr>
+        </thead>
+        <tbody id="student-table">
+          <!-- Data dari JS -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <footer class="container-fluid text-center bg-primary text-white py-2 mt-3">
+    <p>
+      &copy; copyright 2016 - 2025 | Desenvolvido pelo : Departamento de Engenharia Informática - FECT
+    </p>
+    <p>
+      <b>Versão: 6.3</b>
+    </p>
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
